@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Downloader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube Downloader</h1>
+    <p class="subtitle">Fast • Free • Minimal</p>
+
+    <div class="card">
+      <input type="text" id="url" placeholder="Paste YouTube URL here..." />
+
+      <div class="mode">
+        <select id="mode">
+          <option value="quick">Quick Download (Best)</option>
+          <option value="resolution">Choose Resolution</option>
+          <option value="audio">Audio Only (MP3)</option>
+        </select>
+      </div>
+
+      <div id="resolution-container" class="hidden">
+        <label for="resolution">Resolution:</label>
+        <select id="resolution"></select>
+      </div>
+
+      <button id="fetch-info">Fetch Info</button>
+      <button id="download" disabled>Download</button>
+
+      <p id="status"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
