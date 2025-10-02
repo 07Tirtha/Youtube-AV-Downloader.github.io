@@ -1,0 +1,115 @@
+/* Dark mode base */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card container */
+.container {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Unified form elements */
+input, select, button {
+  width: 100%;
+  margin: 0.6rem 0;
+  padding: 0.9rem 1rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Input + select (dark mode) */
+input, select {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #3a3a3a;
+  transition: border 0.2s, background 0.2s;
+}
+
+input:focus, select:focus {
+  border: 1px solid #3a7dff; /* Accent border */
+  background-color: #333;
+}
+
+/* Button (accent style) */
+button {
+  background-color: #3a7dff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #1f5ee9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Dropdown options (dark mode) */
+select option {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+/* Results section */
+#result {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  text-align: left;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #333;
+}
+
+/* Clean custom dropdown */
+select {
+  appearance: none; /* Remove default OS styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #3a3a3a;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1rem;
+  padding-right: 2.5rem; /* Space for arrow */
+  position: relative;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  cursor: pointer;
+  transition: border 0.2s, background 0.2s;
+}
+
+select:focus {
+  border: 1px solid #3a7dff;
+  background-color: #333;
+}
